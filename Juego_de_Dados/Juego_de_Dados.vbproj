@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB4BCC92-A0D1-4120-9B7C-5462E6760636}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Juego_de_Dados.My.MyApplication</StartupObject>
+    <RootNamespace>Juego_de_Dados</RootNamespace>
+    <AssemblyName>Juego_de_Dados</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Juego_de_Dados.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Juego_de_Dados.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuraciones.Designer.vb">
+      <DependentUpon>Configuraciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INICIO.Designer.vb">
+      <DependentUpon>INICIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INICIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pausa.Designer.vb">
+      <DependentUpon>Pausa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pausa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion.Designer.vb">
+      <DependentUpon>Presentacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rum_Juego.Designer.vb">
+      <DependentUpon>Rum_Juego.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rum_Juego.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Configuraciones.resx">
+      <DependentUpon>Configuraciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INICIO.resx">
+      <DependentUpon>INICIO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pausa.resx">
+      <DependentUpon>Pausa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion.resx">
+      <DependentUpon>Presentacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rum_Juego.resx">
+      <DependentUpon>Rum_Juego.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_tirar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_tirar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\fondo-sombra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Juego dados1_Inicio_editado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_iniciar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_configuracion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_estadistica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_ayuda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_acerca de.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_cerrar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_cerrar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_cerrar2_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_iniciar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_configuracion2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_estadistica2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_ayuda2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_acerca de2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_dificultad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_dado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_jugar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_dificultad2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_dado2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_maximizar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_minimizar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\fondo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\fondo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_atras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\fondo2-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\dado1-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\dado2-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\dado3-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\dado4-4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\dado5-5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\dado6-6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_pausa2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_pausa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\fondo2-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_reiniciar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_rcontinua2r.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_rcontinuar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_reiniciar2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_rmenuPrincipal2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\boton_rmenuPrincipal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\fondo-sombra2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
